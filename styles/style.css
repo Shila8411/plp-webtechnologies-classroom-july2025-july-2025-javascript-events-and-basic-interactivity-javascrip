@@ -1,0 +1,123 @@
+/* General Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f9ff;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s, color 0.3s;
+}
+
+header {
+  background: #0077b6;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+header button {
+  background: white;
+  color: #0077b6;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+main {
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.counter-box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#counter {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+button {
+  cursor: pointer;
+  background: #0077b6;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #023e8a;
+}
+
+/* FAQ */
+.faq-question {
+  cursor: pointer;
+  background: #caf0f8;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.faq-answer {
+  display: none;
+  margin: 0.5rem 0 1rem;
+}
+
+/* Form */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+}
+
+#formFeedback {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+/* Dark Mode */
+body.dark {
+  background: #03045e;
+  color: white;
+}
+
+body.dark header {
+  background: #001233;
+}
+
+body.dark .card {
+  background: #1e1e1e;
+}
+
+body.dark button {
+  background: #90e0ef;
+  color: black;
+}
+
+body.dark .faq-question {
+  background: #333;
+  color: white;
+}

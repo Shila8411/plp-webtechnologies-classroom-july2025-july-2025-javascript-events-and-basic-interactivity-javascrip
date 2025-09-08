@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Explorer </title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header>
+    <h1>Travel Explorer</h1>
+    <button id="themeToggle">Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Travel Counter -->
+    <section class="card">
+      <h2>Countries Visited</h2>
+      <p>Track your travel adventures!</p>
+      <div class="counter-box">
+        <span id="counter">0</span>
+        <button id="incrementBtn">+1 Country</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="card">
+      <h2> Travel FAQ</h2>
+      <div class="faq">
+        <div class="faq-item">
+          <h3 class="faq-question">What is Travel Explorer?</h3>
+          <p class="faq-answer">It’s a fun site to track your journeys, learn, and get inspired to travel more.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Can I save my travel data?</h3>
+          <p class="faq-answer">Currently, your count resets when you refresh, but future updates will add saving features!</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">How do I join the Travel Club?</h3>
+          <p class="faq-answer">Fill in the signup form below and become part of our explorer community.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Signup Form -->
+    <section class="card">
+      <h2>Join the Explorer Club</h2>
+      <form id="signupForm" novalidate>
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required>
+          <small class="error-message"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required>
+          <small class="error-message"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password (min 6 chars, 1 number):</label>
+          <input type="password" id="password" name="password" required>
+          <small class="error-message"></small>
+        </div>
+
+        <button type="submit">Join Now </button>
+        <p id="formFeedback"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p> Made for explorers </p>
+  </footer>
+
+  <script src="script/script.js"></script>
+</body>
+</html>
